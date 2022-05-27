@@ -1,1 +1,1 @@
-# collective_betweenness
+# Collective betweenness centrality
