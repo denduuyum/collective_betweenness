@@ -56,23 +56,6 @@ if __name__ == '__main__':
     cbc = collective_bc_sum(G, bc, depth = 1)
     deg = nx.algorithms.centrality.degree_centrality(G)
 
-    # bc_dat = [bc[u] for u in G]
-    # cbd_dat = [cbd[u] for u in G]
-    # cbs_dat = [cbs[u] for u in G]
-    # deg_max = max([G.degree(u) for u in G])
-    # deg_dat = [G.degree(u) for u in G]
-    # plt.subplot('121')
-    # plt.scatter(bc_dat, cbd_dat)
-    # plt.plot([0, 0.5], [0, 0.5], color = 'black')
-    # plt.xlabel('shortest-path betweenness')
-    # plt.ylabel('collective BC / degree')
-    # plt.subplot('122')
-    # plt.scatter(deg_dat, cbd_dat)
-    # plt.plot([0, deg_max], [0, 0.5], color = 'black')
-    # plt.xlabel('degree')
-    # plt.savefig('fig.png')
-    # plt.show()
-
     frame = []
     for u in G:
         # frame.append((bc[u], cbd[u]))
